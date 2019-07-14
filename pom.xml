@@ -139,7 +139,7 @@
 					</from>
 					-->
 					<to>
-						<image>osanz/helloworld-jib:${project.version}</image>
+						<image>osanz/helloworld-skaffold:${project.version}</image>
 					</to>
 				</configuration>
 				<executions>
