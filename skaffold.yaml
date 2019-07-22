@@ -1,0 +1,11 @@
+apiVersion: skaffold/v1beta13
+kind: Config
+deploy:
+  kubectl:
+    manifests:
+    - k8s-pod.yaml
+portForward:
+  - resourceType: deployment
+    resourceName: helloworld-skaffold
+    port: 8082
+    localPort: 9000

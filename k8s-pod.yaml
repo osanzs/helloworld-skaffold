@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: helloworld-skaffold
+spec:
+  hostNetwork: true
+  containers:
+  - name: helloworld-skaffold
+    image: osanz/helloworld-skaffold:0.0.1-SNAPSHOT
+    ports:
+    - containerPort: 8082
+      hostPort: 8082
