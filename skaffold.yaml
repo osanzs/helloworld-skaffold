@@ -8,4 +8,4 @@ portForward:
   - resourceType: deployment
     resourceName: helloworld-skaffold
     port: 8082
-    localPort: 9000
+    localPort: 8082
