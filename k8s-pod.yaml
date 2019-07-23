@@ -6,7 +6,11 @@ spec:
   hostNetwork: true
   containers:
   - name: helloworld-skaffold
-    image: osanz/helloworld-skaffold:0.0.1-SNAPSHOT
+    image: osanz/helloworld-skaffold
     ports:
     - containerPort: 8082
       hostPort: 8082
+    resources:
+      limits:
+        memory: "256Mi"
+        cpu: "500m"
